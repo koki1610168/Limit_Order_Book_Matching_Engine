@@ -19,6 +19,9 @@ class OrderBook {
         std::vector<Trade> match(Order& order);
         void printBook() const;
 
+        const auto& getBuyOrders() const { return buyOrders; }
+        const auto& getSellOrders() const { return sellOrders; }
+
     private:
         //deque, because FIFO.
         //sort in decending order.
