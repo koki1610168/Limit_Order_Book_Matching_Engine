@@ -14,8 +14,16 @@ A simple limit order book matching engine written in C++20
 <pre>
 matching-engine/
 |---include/
+        |---MatchingEngine.hpp
+        |---Order.hpp
+        |---OrderBook.hpp
 |---src/
+        |---main.cpp
+        |---MatchingEngine.cpp
+        |---OrderBook.cpp
 |---tests/
+        |---MatchingEngineTest.cpp
+        |---OrderBookTest.cpp
 |---CMakeLists.txt
 |---README.md
 |---LICENSE.md
