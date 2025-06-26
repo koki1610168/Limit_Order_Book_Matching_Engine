@@ -76,17 +76,21 @@ int main() {
 **Output**
 ```
 New Order - ID: 1, Side: BUY, Qty: 10, Price: $100
-  ---> Remaining Qty 10 added to book.
+  ---> Remaining Qty 10 added to buy order book.
+--------------------------------------------------------
 
 New Order - ID: 2, Side: SELL, Qty: 5, Price: $99
-  TRADE: BuyID 1, SellID 2, Qty: 5, Price: $100
+TRADE: BuyID 1, SellID 2, Qty: 5, Price: $100
+--------------------------------------------------------
 
 New Order - ID: 3, Side: SELL, Qty: 10, Price: $100
-  TRADE: BuyID 1, SellID 3, Qty: 5, Price: $100
-  ---> Remaining Qty 5 added to book.
+TRADE: BuyID 1, SellID 3, Qty: 5, Price: $100
+  ---> Remaining Qty 5 added to sell order book.
+--------------------------------------------------------
 
 New Order - ID: 4, Side: BUY, Qty: 3, Price: $98
-  ---> Remaining Qty 3 added to book.
+  ---> Remaining Qty 3 added to buy order book.
+--------------------------------------------------------
 
 Final Order Book:
 
