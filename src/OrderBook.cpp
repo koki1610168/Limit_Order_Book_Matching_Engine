@@ -22,8 +22,9 @@ std::vector<Trade> OrderBook::match(Order& order) {
     if (order.side == Side::BUY) {
         for (auto it = sellOrders.begin(); it != sellOrders.end() && order.quantity > 0;) {
             if (order.price < it->first) break;
-
+            
             auto& queue = it->second;
+            // try to execute the order as long as the queue is not empty and order is not 0
             while (!queue.empty() && order.quantity > 0) {
                 Order& top = queue.front();
                 uint32_t qty = std::min(order.quantity, top.quantity);
@@ -34,7 +35,7 @@ std::vector<Trade> OrderBook::match(Order& order) {
 
                 if (top.quantity == 0) queue.pop_front();
             }
-
+            // if all order at this price is filled, erase the entry from the order book.
             if (queue.empty()) it = sellOrders.erase(it);
             else ++it;
         }

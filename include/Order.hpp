@@ -4,11 +4,14 @@
 
 enum class Side { BUY, SELL };
 
+
+// Order submitted by a user.
 struct Order {
     uint64_t id;
     Side side;
     double price;
     uint32_t quantity;
+    // First in First Out structure
     uint64_t timestamp;
 
     Order(uint64_t id, Side side, double price, uint32_t qty)

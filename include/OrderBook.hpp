@@ -19,12 +19,14 @@ class OrderBook {
         std::vector<Trade> match(Order& order);
         void printBook() const;
 
+        // required for testing
         const auto& getBuyOrders() const { return buyOrders; }
         const auto& getSellOrders() const { return sellOrders; }
 
     private:
-        //deque, because FIFO.
-        //sort in decending order.
+        // deque, because FIFO.
+        // sort in decending order.
         std::map<double, std::deque<Order>, std::greater<>> buyOrders;
+        // sort in ascending order.
         std::map<double, std::deque<Order>> sellOrders;
 };
