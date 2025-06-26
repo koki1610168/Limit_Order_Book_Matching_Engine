@@ -114,6 +114,17 @@ Submitted 1000000 orders in 1.62821 seconds
 Throughput: 614171 orders/sec
 ```
 
+### Logging File Example
+```
+[2025-06-25 21:36:22.926]Trade | BuyID: 3 | SellID: 2 | Price: 93.12 | Qty: 5
+[2025-06-25 21:36:22.926]Trade | BuyID: 3 | SellID: 1 | Price: 93.67 | Qty: 4
+[2025-06-25 21:36:22.926]Trade | BuyID: 5 | SellID: 1 | Price: 93.67 | Qty: 4
+[2025-06-25 21:36:22.926]Trade | BuyID: 5 | SellID: 4 | Price: 104.16 | Qty: 5
+[2025-06-25 21:36:22.926]Trade | BuyID: 10 | SellID: 11 | Price: 99.12 | Qty: 1
+[2025-06-25 21:36:22.926]Trade | BuyID: 8 | SellID: 12 | Price: 95.82 | Qty: 6
+[2025-06-25 21:36:22.926]Trade | BuyID: 6 | SellID: 12 | Price: 93.64 | Qty: 3
+[2025-06-25 21:36:22.926]Trade | BuyID: 23 | SellID: 20 | Price: 93.7 | Qty: 1
+```
 ## License
 MIT License 
 MIT License © 2025 Koki Yahata

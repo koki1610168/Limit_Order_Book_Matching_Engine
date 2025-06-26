@@ -1,6 +1,7 @@
 #include "TradeLogger.hpp"
 #include <iomanip>
 #include <iostream>
+#include <chrono>
 
 TradeLogger::TradeLogger(const std::string& filename)
     : logFile_(filename, std::ios::out | std::ios::app), running_(false) {
@@ -44,7 +45,17 @@ void TradeLogger::run() {
             queue_.pop();
             lock.unlock();
 
-            logFile_ << "Trade | BuyID: " << trade.buy_order_id
+            auto now = std::chrono::system_clock::now();
+            auto now_time_t = std::chrono::system_clock::to_time_t(now);
+            auto now_ms = std::chrono::duration_cast<std::chrono::milliseconds>(
+                now.time_since_epoch()) % 1000;
+            
+            
+            std::tm tm = *std::localtime(&now_time_t);
+
+            logFile_ << "[" << std::put_time(&tm, "%Y-%m-%d %H:%M:%S") 
+                    << "." << std::setfill('0') << std::setw(3) << now_ms.count() << "]"
+                    << "Trade | BuyID: " << trade.buy_order_id
                     << " | SellID: " << trade.sell_order_id
                     << " | Price: " << trade.price
                     << " | Qty: " << trade.quantity << "\n";
