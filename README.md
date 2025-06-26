@@ -1,11 +1,11 @@
-# C++ Limit Order Book Matching Engine
+# C++ Limit & Market Order Book Matching Engine
 
 A simple limit order book matching engine written in C++20
 
 ---
 
 ## Features
-- Handles limit buy and sell orders
+- Handles limit & market buy and sell orders
 - Implements price-time priority
 - Tracks partially filled and unmatched orders in an order book
 - Asynchronous trade logging via a background thread

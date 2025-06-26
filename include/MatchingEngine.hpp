@@ -1,13 +1,14 @@
 #pragma once
 #include "OrderBook.hpp"
 #include "TradeLogger.hpp"
+#include "Order.hpp"
 #include <atomic>
 
 class MatchingEngine {
     public:
         MatchingEngine();
 
-        void submitOrder(Side side, double price, uint32_t quantity);
+        void submitOrder(Side side, OrderType type, double price, uint32_t quantity);
         void printOrderBook() const;
 
         void startLogging();

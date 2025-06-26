@@ -12,16 +12,10 @@ void OrderBook::addOrder(const Order& order) {
 std::vector<Trade> OrderBook::match(Order& order) {
     std::vector<Trade> trades;
 
-    if (order.side == Side::BUY) {
-        auto& book = sellOrders;
-    } else {
-        auto& book = buyOrders;
-    }
-
     // Match against sellOrders
     if (order.side == Side::BUY) {
         for (auto it = sellOrders.begin(); it != sellOrders.end() && order.quantity > 0;) {
-            if (order.price < it->first) break;
+            if (order.type == OrderType::LIMIT && order.price < it->first) break;
             
             auto& queue = it->second;
             // try to execute the order as long as the queue is not empty and order is not 0
@@ -41,7 +35,7 @@ std::vector<Trade> OrderBook::match(Order& order) {
         }
     } else {
         for (auto it = buyOrders.begin(); it != buyOrders.end() && order.quantity > 0;) {
-            if (order.price > it->first) break;
+            if (order.type == OrderType::LIMIT && order.price > it->first) break;
 
             auto& queue = it->second;
             while (!queue.empty() && order.quantity > 0) {

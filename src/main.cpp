@@ -6,10 +6,10 @@ int main() {
 
     engine.startLogging();
 
-    engine.submitOrder(Side::BUY, 100.0, 10);
-    engine.submitOrder(Side::SELL, 99.0, 5);
-    engine.submitOrder(Side::SELL, 100.0, 10);
-    engine.submitOrder(Side::BUY, 98.0, 3);
+    engine.submitOrder(Side::BUY, OrderType::LIMIT, 100.0, 10);
+    engine.submitOrder(Side::SELL, OrderType::MARKET, 99.0, 5);
+    engine.submitOrder(Side::SELL, OrderType::LIMIT, 100.0, 10);
+    engine.submitOrder(Side::BUY, OrderType::MARKET, 98.0, 3);
 
     std::cout << "\nFinal Order Book:\n";
     engine.printOrderBook();

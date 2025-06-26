@@ -21,7 +21,7 @@ int main() {
         double raw = price_dist(rng);
         double price = std::round(raw * 100.0) / 100.0;
         uint32_t qty = quantity_dist(rng);
-        engine.submitOrder(side, price, qty);
+        engine.submitOrder(side, OrderType::LIMIT, price, qty);
     }
 
     auto end = std::chrono::high_resolution_clock::now();
