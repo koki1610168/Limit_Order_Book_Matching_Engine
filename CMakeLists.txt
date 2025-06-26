@@ -8,7 +8,12 @@ include_directories(include)
 
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(engine ${SOURCES})
+add_executable(engine
+    src/main.cpp
+    src/MatchingEngine.cpp
+    src/OrderBook.cpp
+    src/TradeLogger.cpp
+)
 
 add_subdirectory(external/googletest)
 enable_testing()
@@ -19,6 +24,7 @@ add_executable(tests
     tests/OrderBookTest.cpp 
     src/OrderBook.cpp
     src/MatchingEngine.cpp
+    src/TradeLogger.cpp
 )
 target_link_libraries(tests gtest gtest_main)
 add_test(NAME OrderBookTests COMMAND tests)

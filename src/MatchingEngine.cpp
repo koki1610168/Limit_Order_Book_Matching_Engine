@@ -1,8 +1,15 @@
 #include "MatchingEngine.hpp"
 #include <iostream>
 
-MatchingEngine::MatchingEngine() : orderIdCounter_(1) {}
+MatchingEngine::MatchingEngine() : orderIdCounter_(1), logger_("../log/trades.log") {}
 
+void MatchingEngine::startLogging() {
+    logger_.start();
+}
+
+void MatchingEngine::stopLogging() {
+    logger_.stop();
+}
 void MatchingEngine::submitOrder(Side side, double price, uint32_t quantity) {
     // increment by 1
     uint64_t id = orderIdCounter_.fetch_add(1);
@@ -21,6 +28,8 @@ void MatchingEngine::submitOrder(Side side, double price, uint32_t quantity) {
                 << ", SellID " << trade.sell_order_id
                 << ", Qty: " << trade.quantity
                 << ", Price: $" << trade.price << "\n";
+
+        logger_.logTrade(trade);
     }
 
     if (order.quantity > 0) {

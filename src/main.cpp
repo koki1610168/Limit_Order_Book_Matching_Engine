@@ -4,6 +4,8 @@
 int main() {
     MatchingEngine engine;
 
+    engine.startLogging();
+
     engine.submitOrder(Side::BUY, 100.0, 10);
     engine.submitOrder(Side::SELL, 99.0, 5);
     engine.submitOrder(Side::SELL, 100.0, 10);
@@ -12,5 +14,6 @@ int main() {
     std::cout << "\nFinal Order Book:\n";
     engine.printOrderBook();
     
+    engine.stopLogging();
     return 0;
 }
