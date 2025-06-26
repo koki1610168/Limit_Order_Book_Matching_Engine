@@ -9,6 +9,7 @@ A simple limit order book matching engine written in C++20
 - Implements price-time priority
 - Tracks partially filled and unmatched orders in an order book
 - Asynchronous trade logging via a background thread
+- Benchmarking with 1,000,000 orders
 - Tested using GoogleTest
 
 ## Project Structure
@@ -100,6 +101,17 @@ BUY:
   ID 4 | Qty: 3 @ 98
 SELL:
   ID 3 | Qty: 5 @ 100
+```
+
+### Benchmark
+**Input**
+```
+./benchmarking
+```
+**Output
+```
+Submitted 1000000 orders in 1.62821 seconds
+Throughput: 614171 orders/sec
 ```
 
 ## License

@@ -172,6 +172,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named benchmarking
+
+# Build rule for target.
+benchmarking: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarking
+.PHONY : benchmarking
+
+# fast build rule for target.
+benchmarking/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/build
+.PHONY : benchmarking/fast
+
+#=============================================================================
 # Target rules for targets named engine
 
 # Build rule for target.
@@ -254,6 +267,7 @@ src/MatchingEngine.o: src/MatchingEngine.cpp.o
 
 # target to build an object file
 src/MatchingEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/MatchingEngine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MatchingEngine.cpp.o
 .PHONY : src/MatchingEngine.cpp.o
@@ -263,6 +277,7 @@ src/MatchingEngine.i: src/MatchingEngine.cpp.i
 
 # target to preprocess a source file
 src/MatchingEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/MatchingEngine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MatchingEngine.cpp.i
 .PHONY : src/MatchingEngine.cpp.i
@@ -272,6 +287,7 @@ src/MatchingEngine.s: src/MatchingEngine.cpp.s
 
 # target to generate assembly for a file
 src/MatchingEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/MatchingEngine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MatchingEngine.cpp.s
 .PHONY : src/MatchingEngine.cpp.s
@@ -281,6 +297,7 @@ src/OrderBook.o: src/OrderBook.cpp.o
 
 # target to build an object file
 src/OrderBook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/OrderBook.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/OrderBook.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.o
 .PHONY : src/OrderBook.cpp.o
@@ -290,6 +307,7 @@ src/OrderBook.i: src/OrderBook.cpp.i
 
 # target to preprocess a source file
 src/OrderBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/OrderBook.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/OrderBook.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.i
 .PHONY : src/OrderBook.cpp.i
@@ -299,6 +317,7 @@ src/OrderBook.s: src/OrderBook.cpp.s
 
 # target to generate assembly for a file
 src/OrderBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/OrderBook.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/OrderBook.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.s
 .PHONY : src/OrderBook.cpp.s
@@ -308,6 +327,7 @@ src/TradeLogger.o: src/TradeLogger.cpp.o
 
 # target to build an object file
 src/TradeLogger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.o
 .PHONY : src/TradeLogger.cpp.o
@@ -317,6 +337,7 @@ src/TradeLogger.i: src/TradeLogger.cpp.i
 
 # target to preprocess a source file
 src/TradeLogger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.i
 .PHONY : src/TradeLogger.cpp.i
@@ -326,9 +347,34 @@ src/TradeLogger.s: src/TradeLogger.cpp.s
 
 # target to generate assembly for a file
 src/TradeLogger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.s
 .PHONY : src/TradeLogger.cpp.s
+
+src/benchmarking.o: src/benchmarking.cpp.o
+.PHONY : src/benchmarking.o
+
+# target to build an object file
+src/benchmarking.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/benchmarking.cpp.o
+.PHONY : src/benchmarking.cpp.o
+
+src/benchmarking.i: src/benchmarking.cpp.i
+.PHONY : src/benchmarking.i
+
+# target to preprocess a source file
+src/benchmarking.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/benchmarking.cpp.i
+.PHONY : src/benchmarking.cpp.i
+
+src/benchmarking.s: src/benchmarking.cpp.s
+.PHONY : src/benchmarking.s
+
+# target to generate assembly for a file
+src/benchmarking.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/benchmarking.cpp.s
+.PHONY : src/benchmarking.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -415,6 +461,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... benchmarking"
 	@echo "... engine"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -430,6 +477,9 @@ help:
 	@echo "... src/TradeLogger.o"
 	@echo "... src/TradeLogger.i"
 	@echo "... src/TradeLogger.s"
+	@echo "... src/benchmarking.o"
+	@echo "... src/benchmarking.i"
+	@echo "... src/benchmarking.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

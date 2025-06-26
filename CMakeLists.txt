@@ -8,6 +8,12 @@ include_directories(include)
 
 file(GLOB SOURCES "src/*.cpp")
 
+add_executable(benchmarking
+    src/benchmarking.cpp
+    src/MatchingEngine.cpp
+    src/OrderBook.cpp
+    src/TradeLogger.cpp
+)
 add_executable(engine
     src/main.cpp
     src/MatchingEngine.cpp
