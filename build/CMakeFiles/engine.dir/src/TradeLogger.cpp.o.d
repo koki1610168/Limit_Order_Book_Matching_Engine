@@ -1,7 +1,7 @@
-CMakeFiles/tests.dir/src/MatchingEngine.cpp.o: \
- /home/koki/projects/matching-engine/src/MatchingEngine.cpp \
+CMakeFiles/engine.dir/src/TradeLogger.cpp.o: \
+ /home/koki/projects/matching-engine/src/TradeLogger.cpp \
  /usr/include/stdc-predef.h \
- /home/koki/projects/matching-engine/include/MatchingEngine.hpp \
+ /home/koki/projects/matching-engine/include/TradeLogger.hpp \
  /home/koki/projects/matching-engine/include/OrderBook.hpp \
  /home/koki/projects/matching-engine/include/Order.hpp \
  /usr/include/c++/11/cstdint \
@@ -113,11 +113,9 @@ CMakeFiles/tests.dir/src/MatchingEngine.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/bits/vector.tcc \
- /home/koki/projects/matching-engine/include/TradeLogger.hpp \
- /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
- /usr/include/c++/11/mutex /usr/include/c++/11/exception \
- /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/queue \
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/mutex \
+ /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/system_error \
@@ -222,4 +220,11 @@ CMakeFiles/tests.dir/src/MatchingEngine.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/thread \
- /usr/include/c++/11/iostream
+ /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/src/MatchingEngine.cpp.o.d"
   "CMakeFiles/tests.dir/src/OrderBook.cpp.o"
   "CMakeFiles/tests.dir/src/OrderBook.cpp.o.d"
+  "CMakeFiles/tests.dir/src/TradeLogger.cpp.o"
+  "CMakeFiles/tests.dir/src/TradeLogger.cpp.o.d"
   "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o"
   "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o.d"
   "CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o"

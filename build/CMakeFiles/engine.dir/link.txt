@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/engine.dir/src/MatchingEngine.cpp.o CMakeFiles/engine.dir/src/OrderBook.cpp.o CMakeFiles/engine.dir/src/main.cpp.o -o engine 
+/usr/bin/c++ CMakeFiles/engine.dir/src/main.cpp.o CMakeFiles/engine.dir/src/MatchingEngine.cpp.o CMakeFiles/engine.dir/src/OrderBook.cpp.o CMakeFiles/engine.dir/src/TradeLogger.cpp.o -o engine 

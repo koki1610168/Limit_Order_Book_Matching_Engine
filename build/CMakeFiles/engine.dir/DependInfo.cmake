@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/koki/projects/matching-engine/src/MatchingEngine.cpp" "CMakeFiles/engine.dir/src/MatchingEngine.cpp.o" "gcc" "CMakeFiles/engine.dir/src/MatchingEngine.cpp.o.d"
   "/home/koki/projects/matching-engine/src/OrderBook.cpp" "CMakeFiles/engine.dir/src/OrderBook.cpp.o" "gcc" "CMakeFiles/engine.dir/src/OrderBook.cpp.o.d"
+  "/home/koki/projects/matching-engine/src/TradeLogger.cpp" "CMakeFiles/engine.dir/src/TradeLogger.cpp.o" "gcc" "CMakeFiles/engine.dir/src/TradeLogger.cpp.o.d"
   "/home/koki/projects/matching-engine/src/main.cpp" "CMakeFiles/engine.dir/src/main.cpp.o" "gcc" "CMakeFiles/engine.dir/src/main.cpp.o.d"
   )
 

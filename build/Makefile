@@ -303,6 +303,33 @@ src/OrderBook.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.s
 .PHONY : src/OrderBook.cpp.s
 
+src/TradeLogger.o: src/TradeLogger.cpp.o
+.PHONY : src/TradeLogger.o
+
+# target to build an object file
+src/TradeLogger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.o
+.PHONY : src/TradeLogger.cpp.o
+
+src/TradeLogger.i: src/TradeLogger.cpp.i
+.PHONY : src/TradeLogger.i
+
+# target to preprocess a source file
+src/TradeLogger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.i
+.PHONY : src/TradeLogger.cpp.i
+
+src/TradeLogger.s: src/TradeLogger.cpp.s
+.PHONY : src/TradeLogger.s
+
+# target to generate assembly for a file
+src/TradeLogger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.s
+.PHONY : src/TradeLogger.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -400,6 +427,9 @@ help:
 	@echo "... src/OrderBook.o"
 	@echo "... src/OrderBook.i"
 	@echo "... src/OrderBook.s"
+	@echo "... src/TradeLogger.o"
+	@echo "... src/TradeLogger.i"
+	@echo "... src/TradeLogger.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
