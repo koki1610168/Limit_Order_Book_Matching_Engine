@@ -8,6 +8,16 @@ include_directories(include)
 
 file(GLOB SOURCES "src/*.cpp")
 
+add_executable(server
+    src/SocketWrapper.cpp
+    src/server.cpp
+)
+
+add_executable(client
+    src/SocketWrapper.cpp
+    src/client.cpp
+)
+
 add_executable(benchmarking
     src/benchmarking.cpp
     src/MatchingEngine.cpp

@@ -1,3 +1,5 @@
+/home/koki/projects/matching-engine/build/CMakeFiles/server.dir
+/home/koki/projects/matching-engine/build/CMakeFiles/client.dir
 /home/koki/projects/matching-engine/build/CMakeFiles/benchmarking.dir
 /home/koki/projects/matching-engine/build/CMakeFiles/engine.dir
 /home/koki/projects/matching-engine/build/CMakeFiles/tests.dir
