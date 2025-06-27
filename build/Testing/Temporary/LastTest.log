@@ -1,14 +1,14 @@
-Start testing: Jun 26 05:36 CDT
+Start testing: Jun 27 06:23 CDT
 ----------------------------------------------------------
 1/1 Testing: OrderBookTests
 1/1 Test: OrderBookTests
 Command: "/home/koki/projects/matching-engine/build/tests"
 Directory: /home/koki/projects/matching-engine/build
-"OrderBookTests" start time: Jun 26 05:36 CDT
+"OrderBookTests" start time: Jun 27 06:23 CDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/koki/projects/matching-engine/external/googletest/googletest/src/gtest_main.cc
-[==========] Running 11 tests from 4 test suites.
+[==========] Running 13 tests from 5 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from MatchingEnineTest
 [ RUN      ] MatchingEnineTest.BuyOrderStoredIfUnmached
@@ -107,15 +107,22 @@ TRADE: BuyID 3, SellID 1, Qty: 4, Price: $100
 [       OK ] OrderBOokTest.NoMatchOrderStored (0 ms)
 [----------] 1 test from OrderBOokTest (0 ms total)
 
+[----------] 2 tests from SingleTCPConnectionTest
+[ RUN      ] SingleTCPConnectionTest.TCPBindAndListenDoesNotThrow
+[       OK ] SingleTCPConnectionTest.TCPBindAndListenDoesNotThrow (0 ms)
+[ RUN      ] SingleTCPConnectionTest.CanConnectToServer
+[       OK ] SingleTCPConnectionTest.CanConnectToServer (100 ms)
+[----------] 2 tests from SingleTCPConnectionTest (100 ms total)
+
 [----------] Global test environment tear-down
-[==========] 11 tests from 4 test suites ran. (1 ms total)
-[  PASSED  ] 11 tests.
+[==========] 13 tests from 5 test suites ran. (101 ms total)
+[  PASSED  ] 13 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderBookTests" end time: Jun 26 05:36 CDT
+"OrderBookTests" end time: Jun 27 06:23 CDT
 "OrderBookTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 26 05:36 CDT
+End testing: Jun 27 06:23 CDT

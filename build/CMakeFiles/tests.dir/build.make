@@ -97,10 +97,24 @@ CMakeFiles/tests.dir/tests/OrderBookTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/OrderBookTest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/tests/OrderBookTest.cpp -o CMakeFiles/tests.dir/tests/OrderBookTest.cpp.s
 
+CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o: /home/koki/projects/matching-engine/tests/SingleTCPConnectionTest.cpp
+CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o -MF CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o.d -o CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o -c /home/koki/projects/matching-engine/tests/SingleTCPConnectionTest.cpp
+
+CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/tests/SingleTCPConnectionTest.cpp > CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.i
+
+CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/tests/SingleTCPConnectionTest.cpp -o CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.s
+
 CMakeFiles/tests.dir/src/OrderBook.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/OrderBook.cpp.o: /home/koki/projects/matching-engine/src/OrderBook.cpp
 CMakeFiles/tests.dir/src/OrderBook.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/src/OrderBook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/src/OrderBook.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/OrderBook.cpp.o -MF CMakeFiles/tests.dir/src/OrderBook.cpp.o.d -o CMakeFiles/tests.dir/src/OrderBook.cpp.o -c /home/koki/projects/matching-engine/src/OrderBook.cpp
 
 CMakeFiles/tests.dir/src/OrderBook.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/tests.dir/src/OrderBook.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/MatchingEngine.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/MatchingEngine.cpp.o: /home/koki/projects/matching-engine/src/MatchingEngine.cpp
 CMakeFiles/tests.dir/src/MatchingEngine.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/src/MatchingEngine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/src/MatchingEngine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/MatchingEngine.cpp.o -MF CMakeFiles/tests.dir/src/MatchingEngine.cpp.o.d -o CMakeFiles/tests.dir/src/MatchingEngine.cpp.o -c /home/koki/projects/matching-engine/src/MatchingEngine.cpp
 
 CMakeFiles/tests.dir/src/MatchingEngine.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/tests.dir/src/MatchingEngine.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/TradeLogger.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/TradeLogger.cpp.o: /home/koki/projects/matching-engine/src/TradeLogger.cpp
 CMakeFiles/tests.dir/src/TradeLogger.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/src/TradeLogger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tests.dir/src/TradeLogger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/TradeLogger.cpp.o -MF CMakeFiles/tests.dir/src/TradeLogger.cpp.o.d -o CMakeFiles/tests.dir/src/TradeLogger.cpp.o -c /home/koki/projects/matching-engine/src/TradeLogger.cpp
 
 CMakeFiles/tests.dir/src/TradeLogger.cpp.i: cmake_force
@@ -139,28 +153,46 @@ CMakeFiles/tests.dir/src/TradeLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/TradeLogger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/TradeLogger.cpp -o CMakeFiles/tests.dir/src/TradeLogger.cpp.s
 
+CMakeFiles/tests.dir/src/SocketWrapper.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/SocketWrapper.cpp.o: /home/koki/projects/matching-engine/src/SocketWrapper.cpp
+CMakeFiles/tests.dir/src/SocketWrapper.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tests.dir/src/SocketWrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/SocketWrapper.cpp.o -MF CMakeFiles/tests.dir/src/SocketWrapper.cpp.o.d -o CMakeFiles/tests.dir/src/SocketWrapper.cpp.o -c /home/koki/projects/matching-engine/src/SocketWrapper.cpp
+
+CMakeFiles/tests.dir/src/SocketWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/SocketWrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/SocketWrapper.cpp > CMakeFiles/tests.dir/src/SocketWrapper.cpp.i
+
+CMakeFiles/tests.dir/src/SocketWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/SocketWrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/SocketWrapper.cpp -o CMakeFiles/tests.dir/src/SocketWrapper.cpp.s
+
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o" \
 "CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o" \
+"CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o" \
 "CMakeFiles/tests.dir/src/OrderBook.cpp.o" \
 "CMakeFiles/tests.dir/src/MatchingEngine.cpp.o" \
-"CMakeFiles/tests.dir/src/TradeLogger.cpp.o"
+"CMakeFiles/tests.dir/src/TradeLogger.cpp.o" \
+"CMakeFiles/tests.dir/src/SocketWrapper.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
 tests: CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o
 tests: CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o
+tests: CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o
 tests: CMakeFiles/tests.dir/src/OrderBook.cpp.o
 tests: CMakeFiles/tests.dir/src/MatchingEngine.cpp.o
 tests: CMakeFiles/tests.dir/src/TradeLogger.cpp.o
+tests: CMakeFiles/tests.dir/src/SocketWrapper.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: lib/libgtest.a
 tests: lib/libgtest_main.a
 tests: lib/libgtest.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

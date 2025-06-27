@@ -9,6 +9,9 @@ using json = nlohmann::json;
 
 int main() {
     try {
+        MatchingEngine engine;
+        engine.startLogging();
+
         // Set up a server and listen on the port 12345
         SocketWrapper server;
         server.bindAndListen(12345);
@@ -16,7 +19,7 @@ int main() {
         server.acceptClient();
         std::cout << "Client connected" << std::endl;
 
-        MatchingEngine engine;
+        
         char buffer[BUFFER_SIZE];
 
         while (true) {
@@ -59,6 +62,7 @@ int main() {
                 server.send(err.c_str(), err.size());
             }
         }
+        engine.stopLogging();
     } catch (const std::exception& e) {
         std::cerr << "Server error: " << e.what() << std::endl;
         return 1;

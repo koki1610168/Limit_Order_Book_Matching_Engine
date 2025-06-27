@@ -391,6 +391,7 @@ src/SocketWrapper.o: src/SocketWrapper.cpp.o
 src/SocketWrapper.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/SocketWrapper.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/SocketWrapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/SocketWrapper.cpp.o
 .PHONY : src/SocketWrapper.cpp.o
 
 src/SocketWrapper.i: src/SocketWrapper.cpp.i
@@ -400,6 +401,7 @@ src/SocketWrapper.i: src/SocketWrapper.cpp.i
 src/SocketWrapper.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/SocketWrapper.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/SocketWrapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/SocketWrapper.cpp.i
 .PHONY : src/SocketWrapper.cpp.i
 
 src/SocketWrapper.s: src/SocketWrapper.cpp.s
@@ -409,6 +411,7 @@ src/SocketWrapper.s: src/SocketWrapper.cpp.s
 src/SocketWrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/SocketWrapper.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/SocketWrapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/SocketWrapper.cpp.s
 .PHONY : src/SocketWrapper.cpp.s
 
 src/TradeLogger.o: src/TradeLogger.cpp.o
@@ -591,6 +594,30 @@ tests/OrderBookTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/OrderBookTest.cpp.s
 .PHONY : tests/OrderBookTest.cpp.s
 
+tests/SingleTCPConnectionTest.o: tests/SingleTCPConnectionTest.cpp.o
+.PHONY : tests/SingleTCPConnectionTest.o
+
+# target to build an object file
+tests/SingleTCPConnectionTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o
+.PHONY : tests/SingleTCPConnectionTest.cpp.o
+
+tests/SingleTCPConnectionTest.i: tests/SingleTCPConnectionTest.cpp.i
+.PHONY : tests/SingleTCPConnectionTest.i
+
+# target to preprocess a source file
+tests/SingleTCPConnectionTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.i
+.PHONY : tests/SingleTCPConnectionTest.cpp.i
+
+tests/SingleTCPConnectionTest.s: tests/SingleTCPConnectionTest.cpp.s
+.PHONY : tests/SingleTCPConnectionTest.s
+
+# target to generate assembly for a file
+tests/SingleTCPConnectionTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.s
+.PHONY : tests/SingleTCPConnectionTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -646,6 +673,9 @@ help:
 	@echo "... tests/OrderBookTest.o"
 	@echo "... tests/OrderBookTest.i"
 	@echo "... tests/OrderBookTest.s"
+	@echo "... tests/SingleTCPConnectionTest.o"
+	@echo "... tests/SingleTCPConnectionTest.i"
+	@echo "... tests/SingleTCPConnectionTest.s"
 .PHONY : help
 
 

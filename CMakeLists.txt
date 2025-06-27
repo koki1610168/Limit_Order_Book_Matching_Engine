@@ -47,9 +47,11 @@ enable_testing()
 add_executable(tests 
     tests/MatchingEngineTest.cpp
     tests/OrderBookTest.cpp 
+    tests/SingleTCPConnectionTest.cpp
     src/OrderBook.cpp
     src/MatchingEngine.cpp
     src/TradeLogger.cpp
+    src/SocketWrapper.cpp
 )
 target_link_libraries(tests gtest gtest_main)
 add_test(NAME OrderBookTests COMMAND tests)
