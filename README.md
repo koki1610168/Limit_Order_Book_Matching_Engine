@@ -8,6 +8,7 @@ A simple limit order book matching engine written in C++20
 - Handles limit & market buy and sell orders
 - Implements price-time priority
 - Tracks partially filled and unmatched orders in an order book
+- Supports client submission of JSON-formatted orders over a TCP connection
 - Asynchronous trade logging via a background thread
 - Benchmarking with 1,000,000 orders
 - Tested using GoogleTest
