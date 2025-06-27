@@ -24,6 +24,7 @@ void MatchingEngine::submitOrder(Side side, OrderType type, double price, uint32
     
     // match the incoming order with the existing orders in the order book.
     auto trades = orderBook_.match(order);
+    lastTrades_ = trades;
 
     for (const auto& trade : trades) {
         
@@ -37,14 +38,26 @@ void MatchingEngine::submitOrder(Side side, OrderType type, double price, uint32
 
     if (order.type == OrderType::LIMIT && order.quantity > 0) {
         orderBook_.addOrder(order);
+        lastStatus_ = trades.empty() ? "ADDED_TO_BOOK" : "PARTIAL_FILL";
         
         std::cout << "  ---> Remaining Qty " << order.quantity << " added to " << (side == Side::BUY ? "buy" : "sell") << " order book.\n";
         
+    } else if (!trades.empty()) {
+        lastStatus_ = "FILLED";
+    } else {
+        lastStatus_ = "NO_MATCH";
     }
     
     std::cout << "--------------------------------------------------------" << std::endl;
     
 
+}
+std::vector<Trade> MatchingEngine::getLastTrades() const {
+    return lastTrades_;
+}
+
+std::string MatchingEngine::getLastStatus() const {
+    return lastStatus_;
 }
 
 void MatchingEngine::printOrderBook() const {

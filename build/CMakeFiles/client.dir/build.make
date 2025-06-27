@@ -69,24 +69,10 @@ include CMakeFiles/client.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/client.dir/flags.make
 
-CMakeFiles/client.dir/src/SocketWrapper.cpp.o: CMakeFiles/client.dir/flags.make
-CMakeFiles/client.dir/src/SocketWrapper.cpp.o: /home/koki/projects/matching-engine/src/SocketWrapper.cpp
-CMakeFiles/client.dir/src/SocketWrapper.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/src/SocketWrapper.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/SocketWrapper.cpp.o -MF CMakeFiles/client.dir/src/SocketWrapper.cpp.o.d -o CMakeFiles/client.dir/src/SocketWrapper.cpp.o -c /home/koki/projects/matching-engine/src/SocketWrapper.cpp
-
-CMakeFiles/client.dir/src/SocketWrapper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/src/SocketWrapper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/SocketWrapper.cpp > CMakeFiles/client.dir/src/SocketWrapper.cpp.i
-
-CMakeFiles/client.dir/src/SocketWrapper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/SocketWrapper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/SocketWrapper.cpp -o CMakeFiles/client.dir/src/SocketWrapper.cpp.s
-
 CMakeFiles/client.dir/src/client.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/src/client.cpp.o: /home/koki/projects/matching-engine/src/client.cpp
 CMakeFiles/client.dir/src/client.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/src/client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/src/client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/client.cpp.o -MF CMakeFiles/client.dir/src/client.cpp.o.d -o CMakeFiles/client.dir/src/client.cpp.o -c /home/koki/projects/matching-engine/src/client.cpp
 
 CMakeFiles/client.dir/src/client.cpp.i: cmake_force
@@ -97,19 +83,97 @@ CMakeFiles/client.dir/src/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/client.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/client.cpp -o CMakeFiles/client.dir/src/client.cpp.s
 
+CMakeFiles/client.dir/src/ClientUtils.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/ClientUtils.cpp.o: /home/koki/projects/matching-engine/src/ClientUtils.cpp
+CMakeFiles/client.dir/src/ClientUtils.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/src/ClientUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/ClientUtils.cpp.o -MF CMakeFiles/client.dir/src/ClientUtils.cpp.o.d -o CMakeFiles/client.dir/src/ClientUtils.cpp.o -c /home/koki/projects/matching-engine/src/ClientUtils.cpp
+
+CMakeFiles/client.dir/src/ClientUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/src/ClientUtils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/ClientUtils.cpp > CMakeFiles/client.dir/src/ClientUtils.cpp.i
+
+CMakeFiles/client.dir/src/ClientUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/ClientUtils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/ClientUtils.cpp -o CMakeFiles/client.dir/src/ClientUtils.cpp.s
+
+CMakeFiles/client.dir/src/SocketWrapper.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/SocketWrapper.cpp.o: /home/koki/projects/matching-engine/src/SocketWrapper.cpp
+CMakeFiles/client.dir/src/SocketWrapper.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/client.dir/src/SocketWrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/SocketWrapper.cpp.o -MF CMakeFiles/client.dir/src/SocketWrapper.cpp.o.d -o CMakeFiles/client.dir/src/SocketWrapper.cpp.o -c /home/koki/projects/matching-engine/src/SocketWrapper.cpp
+
+CMakeFiles/client.dir/src/SocketWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/src/SocketWrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/SocketWrapper.cpp > CMakeFiles/client.dir/src/SocketWrapper.cpp.i
+
+CMakeFiles/client.dir/src/SocketWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/SocketWrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/SocketWrapper.cpp -o CMakeFiles/client.dir/src/SocketWrapper.cpp.s
+
+CMakeFiles/client.dir/src/MatchingEngine.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/MatchingEngine.cpp.o: /home/koki/projects/matching-engine/src/MatchingEngine.cpp
+CMakeFiles/client.dir/src/MatchingEngine.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/client.dir/src/MatchingEngine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/MatchingEngine.cpp.o -MF CMakeFiles/client.dir/src/MatchingEngine.cpp.o.d -o CMakeFiles/client.dir/src/MatchingEngine.cpp.o -c /home/koki/projects/matching-engine/src/MatchingEngine.cpp
+
+CMakeFiles/client.dir/src/MatchingEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/src/MatchingEngine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/MatchingEngine.cpp > CMakeFiles/client.dir/src/MatchingEngine.cpp.i
+
+CMakeFiles/client.dir/src/MatchingEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/MatchingEngine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/MatchingEngine.cpp -o CMakeFiles/client.dir/src/MatchingEngine.cpp.s
+
+CMakeFiles/client.dir/src/OrderBook.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/OrderBook.cpp.o: /home/koki/projects/matching-engine/src/OrderBook.cpp
+CMakeFiles/client.dir/src/OrderBook.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/client.dir/src/OrderBook.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/OrderBook.cpp.o -MF CMakeFiles/client.dir/src/OrderBook.cpp.o.d -o CMakeFiles/client.dir/src/OrderBook.cpp.o -c /home/koki/projects/matching-engine/src/OrderBook.cpp
+
+CMakeFiles/client.dir/src/OrderBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/src/OrderBook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/OrderBook.cpp > CMakeFiles/client.dir/src/OrderBook.cpp.i
+
+CMakeFiles/client.dir/src/OrderBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/OrderBook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/OrderBook.cpp -o CMakeFiles/client.dir/src/OrderBook.cpp.s
+
+CMakeFiles/client.dir/src/TradeLogger.cpp.o: CMakeFiles/client.dir/flags.make
+CMakeFiles/client.dir/src/TradeLogger.cpp.o: /home/koki/projects/matching-engine/src/TradeLogger.cpp
+CMakeFiles/client.dir/src/TradeLogger.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/client.dir/src/TradeLogger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/src/TradeLogger.cpp.o -MF CMakeFiles/client.dir/src/TradeLogger.cpp.o.d -o CMakeFiles/client.dir/src/TradeLogger.cpp.o -c /home/koki/projects/matching-engine/src/TradeLogger.cpp
+
+CMakeFiles/client.dir/src/TradeLogger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/client.dir/src/TradeLogger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/TradeLogger.cpp > CMakeFiles/client.dir/src/TradeLogger.cpp.i
+
+CMakeFiles/client.dir/src/TradeLogger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/TradeLogger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/TradeLogger.cpp -o CMakeFiles/client.dir/src/TradeLogger.cpp.s
+
 # Object files for target client
 client_OBJECTS = \
+"CMakeFiles/client.dir/src/client.cpp.o" \
+"CMakeFiles/client.dir/src/ClientUtils.cpp.o" \
 "CMakeFiles/client.dir/src/SocketWrapper.cpp.o" \
-"CMakeFiles/client.dir/src/client.cpp.o"
+"CMakeFiles/client.dir/src/MatchingEngine.cpp.o" \
+"CMakeFiles/client.dir/src/OrderBook.cpp.o" \
+"CMakeFiles/client.dir/src/TradeLogger.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
 
-client: CMakeFiles/client.dir/src/SocketWrapper.cpp.o
 client: CMakeFiles/client.dir/src/client.cpp.o
+client: CMakeFiles/client.dir/src/ClientUtils.cpp.o
+client: CMakeFiles/client.dir/src/SocketWrapper.cpp.o
+client: CMakeFiles/client.dir/src/MatchingEngine.cpp.o
+client: CMakeFiles/client.dir/src/OrderBook.cpp.o
+client: CMakeFiles/client.dir/src/TradeLogger.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

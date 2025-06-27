@@ -9,14 +9,23 @@ include_directories(include)
 file(GLOB SOURCES "src/*.cpp")
 
 add_executable(server
-    src/SocketWrapper.cpp
     src/server.cpp
+    src/SocketWrapper.cpp
+    src/MatchingEngine.cpp
+    src/OrderBook.cpp
+    src/TradeLogger.cpp
 )
 
 add_executable(client
-    src/SocketWrapper.cpp
     src/client.cpp
+    src/ClientUtils.cpp
+    src/SocketWrapper.cpp
+    src/MatchingEngine.cpp
+    src/OrderBook.cpp
+    src/TradeLogger.cpp
 )
+
+
 
 add_executable(benchmarking
     src/benchmarking.cpp

@@ -1,18 +1,20 @@
 #include "SocketWrapper.hpp"
+#include "ClientUtils.hpp"
 #include <iostream>
-#include <cstring>
+#include "json.hpp"
+
+using json = nlohmann::json;
 
 int main() {
     SocketWrapper client;
     client.connectToServer("127.0.0.1", 12345);
+    std::cout << "Connected to server" << std::endl;
 
-    const char* message = "Hello from client";
+
+    sendOrder(client, "BUY", "LIMIT", 101.5, 10);
+    sendOrder(client, "SELL", "LIMIT", 101.5, 15);
+    sendOrder(client, "BUY", "LIMIT", 99.5, 5);
 
 
-    client.send(message, std::strlen(message));
-
-    char buffer[128] = {};
-    client.receive(buffer, sizeof(buffer));
-
-    std::cout << "Received from server: " << buffer << std::endl;
+    return 0;
 }

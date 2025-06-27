@@ -142,12 +142,12 @@ external/googletest/googletest/clean: external/googletest/googletest/CMakeFiles/
 CMakeFiles/server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=22,23,24 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=26,27,28,29,30,31 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
@@ -168,12 +168,12 @@ CMakeFiles/server.dir/clean:
 CMakeFiles/client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=6,7,8 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
@@ -220,7 +220,7 @@ CMakeFiles/benchmarking.dir/clean:
 CMakeFiles/engine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target engine"
 .PHONY : CMakeFiles/engine.dir/all
 
 # Build rule for subdir invocation for target.
@@ -247,7 +247,7 @@ CMakeFiles/tests.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/al
 CMakeFiles/tests.dir/all: external/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=25,26,27,28,29,30 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=32,33,34,35,36,37 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -273,7 +273,7 @@ CMakeFiles/tests.dir/clean:
 external/googletest/googlemock/CMakeFiles/gmock.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f external/googletest/googlemock/CMakeFiles/gmock.dir/build.make external/googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googletest/googlemock/CMakeFiles/gmock.dir/build.make external/googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=14,15 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=18,19 "Built target gmock"
 .PHONY : external/googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -300,7 +300,7 @@ external/googletest/googlemock/CMakeFiles/gmock_main.dir/all: external/googletes
 external/googletest/googlemock/CMakeFiles/gmock_main.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f external/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make external/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make external/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=16,17 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=20,21 "Built target gmock_main"
 .PHONY : external/googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -326,7 +326,7 @@ external/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 external/googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest.dir/build.make external/googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest.dir/build.make external/googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=18,19 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=22,23 "Built target gtest"
 .PHONY : external/googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -352,7 +352,7 @@ external/googletest/googletest/CMakeFiles/gtest.dir/clean:
 external/googletest/googletest/CMakeFiles/gtest_main.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=20,21 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=24,25 "Built target gtest_main"
 .PHONY : external/googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

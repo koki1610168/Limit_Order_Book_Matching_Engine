@@ -10,6 +10,8 @@ class MatchingEngine {
 
         void submitOrder(Side side, OrderType type, double price, uint32_t quantity);
         void printOrderBook() const;
+        std::vector<Trade> getLastTrades() const;
+        std::string getLastStatus() const;
 
         void startLogging();
         void stopLogging();
@@ -23,4 +25,6 @@ class MatchingEngine {
         // prevent race condition
         std::atomic<uint64_t> orderIdCounter_;
         TradeLogger logger_;
+        std::vector<Trade> lastTrades_;
+        std::string lastStatus_;
 };

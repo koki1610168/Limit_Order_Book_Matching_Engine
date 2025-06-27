@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/server.dir/src/SocketWrapper.cpp.o CMakeFiles/server.dir/src/server.cpp.o -o server 
+/usr/bin/c++ CMakeFiles/server.dir/src/server.cpp.o CMakeFiles/server.dir/src/SocketWrapper.cpp.o CMakeFiles/server.dir/src/MatchingEngine.cpp.o CMakeFiles/server.dir/src/OrderBook.cpp.o CMakeFiles/server.dir/src/TradeLogger.cpp.o -o server 

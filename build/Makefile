@@ -288,11 +288,37 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/ClientUtils.o: src/ClientUtils.cpp.o
+.PHONY : src/ClientUtils.o
+
+# target to build an object file
+src/ClientUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.o
+.PHONY : src/ClientUtils.cpp.o
+
+src/ClientUtils.i: src/ClientUtils.cpp.i
+.PHONY : src/ClientUtils.i
+
+# target to preprocess a source file
+src/ClientUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.i
+.PHONY : src/ClientUtils.cpp.i
+
+src/ClientUtils.s: src/ClientUtils.cpp.s
+.PHONY : src/ClientUtils.s
+
+# target to generate assembly for a file
+src/ClientUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.s
+.PHONY : src/ClientUtils.cpp.s
+
 src/MatchingEngine.o: src/MatchingEngine.cpp.o
 .PHONY : src/MatchingEngine.o
 
 # target to build an object file
 src/MatchingEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MatchingEngine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/MatchingEngine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/MatchingEngine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MatchingEngine.cpp.o
@@ -303,6 +329,8 @@ src/MatchingEngine.i: src/MatchingEngine.cpp.i
 
 # target to preprocess a source file
 src/MatchingEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MatchingEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/MatchingEngine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/MatchingEngine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MatchingEngine.cpp.i
@@ -313,6 +341,8 @@ src/MatchingEngine.s: src/MatchingEngine.cpp.s
 
 # target to generate assembly for a file
 src/MatchingEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MatchingEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/MatchingEngine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/MatchingEngine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MatchingEngine.cpp.s
@@ -323,6 +353,8 @@ src/OrderBook.o: src/OrderBook.cpp.o
 
 # target to build an object file
 src/OrderBook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OrderBook.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/OrderBook.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/OrderBook.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/OrderBook.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.o
@@ -333,6 +365,8 @@ src/OrderBook.i: src/OrderBook.cpp.i
 
 # target to preprocess a source file
 src/OrderBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OrderBook.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/OrderBook.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/OrderBook.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/OrderBook.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.i
@@ -343,6 +377,8 @@ src/OrderBook.s: src/OrderBook.cpp.s
 
 # target to generate assembly for a file
 src/OrderBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/OrderBook.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/OrderBook.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/OrderBook.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/OrderBook.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/OrderBook.cpp.s
@@ -380,6 +416,8 @@ src/TradeLogger.o: src/TradeLogger.cpp.o
 
 # target to build an object file
 src/TradeLogger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/TradeLogger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/TradeLogger.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.o
@@ -390,6 +428,8 @@ src/TradeLogger.i: src/TradeLogger.cpp.i
 
 # target to preprocess a source file
 src/TradeLogger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/TradeLogger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/TradeLogger.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.i
@@ -400,6 +440,8 @@ src/TradeLogger.s: src/TradeLogger.cpp.s
 
 # target to generate assembly for a file
 src/TradeLogger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/TradeLogger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/TradeLogger.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/TradeLogger.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/TradeLogger.cpp.s
@@ -571,6 +613,9 @@ help:
 	@echo "... gtest_main"
 	@echo "... server"
 	@echo "... tests"
+	@echo "... src/ClientUtils.o"
+	@echo "... src/ClientUtils.i"
+	@echo "... src/ClientUtils.s"
 	@echo "... src/MatchingEngine.o"
 	@echo "... src/MatchingEngine.i"
 	@echo "... src/MatchingEngine.s"
