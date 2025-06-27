@@ -58,20 +58,24 @@ You can eddit main.cpp to change orders
 ### Sample Input and Output
 **Input**
 ```cpp
-#include "MatchingEngine.hpp"
+#include "SocketWrapper.hpp"
+#include "ClientUtils.hpp"
 #include <iostream>
+#include "json.hpp"
+
+using json = nlohmann::json;
 
 int main() {
-    MatchingEngine engine;
+    SocketWrapper client;
+    client.connectToServer("127.0.0.1", 12345);
+    std::cout << "Connected to server" << std::endl;
 
-    engine.submitOrder(Side::BUY, 100.0, 10);
-    engine.submitOrder(Side::SELL, 99.0, 5);
-    engine.submitOrder(Side::SELL, 100.0, 10);
-    engine.submitOrder(Side::BUY, 98.0, 3);
 
-    std::cout << "\nFinal Order Book:\n";
-    engine.printOrderBook();
-    
+    sendOrder(client, "BUY", "LIMIT", 100.0, 10);
+    sendOrder(client, "SELL", "MARKET", 99.0, 5);
+    sendOrder(client, "SELL", "LIMIT", 100.0, 10);
+    sendOrder(client, "BUY", "MARKET", 98.0, 3);
+
     return 0;
 }
 ```

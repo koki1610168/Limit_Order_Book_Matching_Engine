@@ -11,10 +11,10 @@ int main() {
     std::cout << "Connected to server" << std::endl;
 
 
-    sendOrder(client, "BUY", "LIMIT", 101.5, 10);
-    sendOrder(client, "SELL", "LIMIT", 101.5, 15);
-    sendOrder(client, "BUY", "LIMIT", 99.5, 5);
-
+    sendOrder(client, "BUY", "LIMIT", 100.0, 10);
+    sendOrder(client, "SELL", "MARKET", 99.0, 5);
+    sendOrder(client, "SELL", "LIMIT", 100.0, 10);
+    sendOrder(client, "BUY", "MARKET", 98.0, 3);
 
     return 0;
 }

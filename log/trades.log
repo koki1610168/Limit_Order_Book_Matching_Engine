@@ -1,1 +1,4 @@
 [2025-06-27 06:19:17.219]Trade | BuyID: 1 | SellID: 2 | Price: 101.5 | Qty: 10
+[2025-06-27 06:29:57.904]Trade | BuyID: 1 | SellID: 2 | Price: 100 | Qty: 5
+[2025-06-27 06:29:57.905]Trade | BuyID: 1 | SellID: 3 | Price: 100 | Qty: 5
+[2025-06-27 06:29:57.905]Trade | BuyID: 4 | SellID: 3 | Price: 100 | Qty: 3
