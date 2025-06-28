@@ -294,6 +294,7 @@ src/ClientUtils.o: src/ClientUtils.cpp.o
 # target to build an object file
 src/ClientUtils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o
 .PHONY : src/ClientUtils.cpp.o
 
 src/ClientUtils.i: src/ClientUtils.cpp.i
@@ -302,6 +303,7 @@ src/ClientUtils.i: src/ClientUtils.cpp.i
 # target to preprocess a source file
 src/ClientUtils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.i
 .PHONY : src/ClientUtils.cpp.i
 
 src/ClientUtils.s: src/ClientUtils.cpp.s
@@ -310,6 +312,7 @@ src/ClientUtils.s: src/ClientUtils.cpp.s
 # target to generate assembly for a file
 src/ClientUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.s
 .PHONY : src/ClientUtils.cpp.s
 
 src/MatchingEngine.o: src/MatchingEngine.cpp.o
@@ -391,6 +394,7 @@ src/SocketWrapper.o: src/SocketWrapper.cpp.o
 src/SocketWrapper.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/SocketWrapper.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/SocketWrapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/SocketWrapper.cpp.o
 .PHONY : src/SocketWrapper.cpp.o
 
@@ -401,6 +405,7 @@ src/SocketWrapper.i: src/SocketWrapper.cpp.i
 src/SocketWrapper.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/SocketWrapper.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/SocketWrapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/SocketWrapper.cpp.i
 .PHONY : src/SocketWrapper.cpp.i
 
@@ -411,6 +416,7 @@ src/SocketWrapper.s: src/SocketWrapper.cpp.s
 src/SocketWrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/SocketWrapper.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/SocketWrapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/SocketWrapper.cpp.s
 .PHONY : src/SocketWrapper.cpp.s
 

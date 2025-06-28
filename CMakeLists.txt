@@ -32,6 +32,8 @@ add_executable(benchmarking
     src/MatchingEngine.cpp
     src/OrderBook.cpp
     src/TradeLogger.cpp
+    src/SocketWrapper.cpp
+    src/ClientUtils.cpp
 )
 add_executable(engine
     src/main.cpp

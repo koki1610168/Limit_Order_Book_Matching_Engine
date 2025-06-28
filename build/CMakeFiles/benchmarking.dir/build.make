@@ -125,12 +125,42 @@ CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/TradeLogger.cpp -o CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.s
 
+CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o: CMakeFiles/benchmarking.dir/flags.make
+CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o: /home/koki/projects/matching-engine/src/SocketWrapper.cpp
+CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o: CMakeFiles/benchmarking.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o -MF CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o.d -o CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o -c /home/koki/projects/matching-engine/src/SocketWrapper.cpp
+
+CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/SocketWrapper.cpp > CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.i
+
+CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/SocketWrapper.cpp -o CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.s
+
+CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o: CMakeFiles/benchmarking.dir/flags.make
+CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o: /home/koki/projects/matching-engine/src/ClientUtils.cpp
+CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o: CMakeFiles/benchmarking.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o -MF CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o.d -o CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o -c /home/koki/projects/matching-engine/src/ClientUtils.cpp
+
+CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/koki/projects/matching-engine/src/ClientUtils.cpp > CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.i
+
+CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/koki/projects/matching-engine/src/ClientUtils.cpp -o CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.s
+
 # Object files for target benchmarking
 benchmarking_OBJECTS = \
 "CMakeFiles/benchmarking.dir/src/benchmarking.cpp.o" \
 "CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.o" \
 "CMakeFiles/benchmarking.dir/src/OrderBook.cpp.o" \
-"CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o"
+"CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o" \
+"CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o" \
+"CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o"
 
 # External object files for target benchmarking
 benchmarking_EXTERNAL_OBJECTS =
@@ -139,9 +169,11 @@ benchmarking: CMakeFiles/benchmarking.dir/src/benchmarking.cpp.o
 benchmarking: CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.o
 benchmarking: CMakeFiles/benchmarking.dir/src/OrderBook.cpp.o
 benchmarking: CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o
+benchmarking: CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o
+benchmarking: CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o
 benchmarking: CMakeFiles/benchmarking.dir/build.make
 benchmarking: CMakeFiles/benchmarking.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable benchmarking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable benchmarking"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/benchmarking.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

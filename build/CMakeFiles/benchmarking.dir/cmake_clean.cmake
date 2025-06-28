@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o"
+  "CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o.d"
   "CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.o"
   "CMakeFiles/benchmarking.dir/src/MatchingEngine.cpp.o.d"
   "CMakeFiles/benchmarking.dir/src/OrderBook.cpp.o"
   "CMakeFiles/benchmarking.dir/src/OrderBook.cpp.o.d"
+  "CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o"
+  "CMakeFiles/benchmarking.dir/src/SocketWrapper.cpp.o.d"
   "CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o"
   "CMakeFiles/benchmarking.dir/src/TradeLogger.cpp.o.d"
   "CMakeFiles/benchmarking.dir/src/benchmarking.cpp.o"

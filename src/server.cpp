@@ -51,7 +51,7 @@ int main() {
                 std::string out = response.dump();
                 server.send(out.c_str(), out.size());
                 
-                engine.printOrderBook();
+                //engine.printOrderBook();
 
             } catch (const std::exception& e) {
                 json errorResp = {
