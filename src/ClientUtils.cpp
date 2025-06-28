@@ -1,4 +1,5 @@
 #include "ClientUtils.hpp"
+#include "SocketWrapper.hpp"
 #include "json.hpp"
 #include <iostream>
 
