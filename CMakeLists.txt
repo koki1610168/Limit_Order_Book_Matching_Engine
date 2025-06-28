@@ -50,10 +50,12 @@ add_executable(tests
     tests/MatchingEngineTest.cpp
     tests/OrderBookTest.cpp 
     tests/SingleTCPConnectionTest.cpp
+    tests/MultiTCPConnectionTest.cpp
     src/OrderBook.cpp
     src/MatchingEngine.cpp
     src/TradeLogger.cpp
     src/SocketWrapper.cpp
+    src/ClientUtils.cpp
 )
 target_link_libraries(tests gtest gtest_main)
 add_test(NAME OrderBookTests COMMAND tests)

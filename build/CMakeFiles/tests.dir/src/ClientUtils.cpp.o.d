@@ -1,6 +1,7 @@
-CMakeFiles/server.dir/src/SocketWrapper.cpp.o: \
- /home/koki/projects/matching-engine/src/SocketWrapper.cpp \
+CMakeFiles/tests.dir/src/ClientUtils.cpp.o: \
+ /home/koki/projects/matching-engine/src/ClientUtils.cpp \
  /usr/include/stdc-predef.h \
+ /home/koki/projects/matching-engine/include/ClientUtils.hpp \
  /home/koki/projects/matching-engine/include/SocketWrapper.hpp \
  /home/koki/projects/matching-engine/include/MatchingEngine.hpp \
  /home/koki/projects/matching-engine/include/OrderBook.hpp \
@@ -291,27 +292,4 @@ CMakeFiles/server.dir/src/SocketWrapper.cpp.o: \
  /usr/include/c++/11/optional /usr/include/c++/11/ranges \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/c++/11/any \
- /usr/include/c++/11/iostream /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
- /usr/include/arpa/inet.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/sys/epoll.h \
- /usr/include/x86_64-linux-gnu/bits/epoll.h
+ /usr/include/c++/11/iostream

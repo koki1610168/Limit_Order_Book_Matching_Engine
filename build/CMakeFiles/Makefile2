@@ -247,12 +247,12 @@ CMakeFiles/tests.dir/all: external/googletest/googletest/CMakeFiles/gtest.dir/al
 CMakeFiles/tests.dir/all: external/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/koki/projects/matching-engine/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41,42,43 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/koki/projects/matching-engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule

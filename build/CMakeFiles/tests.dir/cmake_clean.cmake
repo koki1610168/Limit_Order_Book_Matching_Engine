@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tests.dir/src/ClientUtils.cpp.o"
+  "CMakeFiles/tests.dir/src/ClientUtils.cpp.o.d"
   "CMakeFiles/tests.dir/src/MatchingEngine.cpp.o"
   "CMakeFiles/tests.dir/src/MatchingEngine.cpp.o.d"
   "CMakeFiles/tests.dir/src/OrderBook.cpp.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/src/TradeLogger.cpp.o.d"
   "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o"
   "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o.d"
+  "CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.o"
+  "CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.o.d"
   "CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o"
   "CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o.d"
   "CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o"
