@@ -1,14 +1,14 @@
-Start testing: Jun 27 06:23 CDT
+Start testing: Jun 28 09:53 CDT
 ----------------------------------------------------------
 1/1 Testing: OrderBookTests
 1/1 Test: OrderBookTests
 Command: "/home/koki/projects/matching-engine/build/tests"
 Directory: /home/koki/projects/matching-engine/build
-"OrderBookTests" start time: Jun 27 06:23 CDT
+"OrderBookTests" start time: Jun 28 09:53 CDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/koki/projects/matching-engine/external/googletest/googletest/src/gtest_main.cc
-[==========] Running 13 tests from 5 test suites.
+[==========] Running 17 tests from 6 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from MatchingEnineTest
 [ RUN      ] MatchingEnineTest.BuyOrderStoredIfUnmached
@@ -114,15 +114,130 @@ TRADE: BuyID 3, SellID 1, Qty: 4, Price: $100
 [       OK ] SingleTCPConnectionTest.CanConnectToServer (100 ms)
 [----------] 2 tests from SingleTCPConnectionTest (100 ms total)
 
+[----------] 4 tests from MultiTCPConnectionTest
+[ RUN      ] MultiTCPConnectionTest.TCPBindAndListenDoesNotThrow
+[       OK ] MultiTCPConnectionTest.TCPBindAndListenDoesNotThrow (0 ms)
+[ RUN      ] MultiTCPConnectionTest.TCPSingleClientConnection
+[       OK ] MultiTCPConnectionTest.TCPSingleClientConnection (100 ms)
+[ RUN      ] MultiTCPConnectionTest.TCPMultiClientConnections
+New client connected: 127.0.0.1:33322
+New client connected: 127.0.0.1:33324
+New client connected: 127.0.0.1:33336
+New client connected: 127.0.0.1:33352
+New client connected: 127.0.0.1:33368
+[       OK ] MultiTCPConnectionTest.TCPMultiClientConnections (101 ms)
+[ RUN      ] MultiTCPConnectionTest.TCPMultiClientOrders
+New client connected: 127.0.0.1:52472
+New client connected: 127.0.0.1:52476
+
+New Order - ID: 1, Side: BUY, Type: LIMIT, Qty: 10, Price: $100
+  ---> Remaining Qty 10 added to buy order book.
+--------------------------------------------------------
+{"status":"ADDED_TO_BOOK"}
+
+ORDER BOOK
+BUY:
+  ID 1 | Qty: 10 @ 100
+SELL:
+Server Response:
+{"status":"ADDED_TO_BOOK"}
+
+New Order - ID: 2, Side: BUY, Type: LIMIT, Qty: 10, Price: $100
+  ---> Remaining Qty 10 added to buy order book.
+--------------------------------------------------------
+{"status":"ADDED_TO_BOOK"}
+
+ORDER BOOK
+BUY:
+  ID 1 | Qty: 10 @ 100
+  ID 2 | Qty: 10 @ 100
+SELL:
+Server Response:
+{"status":"ADDED_TO_BOOK"}
+
+New Order - ID: 3, Side: SELL, Type: MARKET, Qty: 5, Price: $99
+TRADE: BuyID 1, SellID 3, Qty: 5, Price: $100
+--------------------------------------------------------
+{"status":"FILLED","trades":[{"buy_order_id":1,"price":100.0,"quantity":5,"sell_order_id":3}]}
+
+ORDER BOOK
+BUY:
+  ID 1 | Qty: 5 @ 100
+  ID 2 | Qty: 10 @ 100
+SELL:
+Server Response:
+{"status":"FILLED","trades":[{"buy_order_id":1,"price":100.0,"quantity":5,"sell_order_id":3}]}
+
+New Order - ID: 4, Side: SELL, Type: MARKET, Qty: 5, Price: $99
+TRADE: BuyID 1, SellID 4, Qty: 5, Price: $100
+--------------------------------------------------------
+{"status":"FILLED","trades":[{"buy_order_id":1,"price":100.0,"quantity":5,"sell_order_id":4}]}
+
+ORDER BOOK
+BUY:
+  ID 2 | Qty: 10 @ 100
+SELL:
+Server Response:
+{"status":"FILLED","trades":[{"buy_order_id":1,"price":100.0,"quantity":5,"sell_order_id":4}]}
+
+New Order - ID: 5, Side: SELL, Type: LIMIT, Qty: 10, Price: $100
+TRADE: BuyID 2, SellID 5, Qty: 10, Price: $100
+--------------------------------------------------------
+{"status":"FILLED","trades":[{"buy_order_id":2,"price":100.0,"quantity":10,"sell_order_id":5}]}
+
+ORDER BOOK
+BUY:
+SELL:
+Server Response:
+{"status":"FILLED","trades":[{"buy_order_id":2,"price":100.0,"quantity":10,"sell_order_id":5}]}
+
+New Order - ID: 6, Side: SELL, Type: LIMIT, Qty: 10, Price: $100
+  ---> Remaining Qty 10 added to sell order book.
+--------------------------------------------------------
+{"status":"ADDED_TO_BOOK"}
+
+ORDER BOOK
+BUY:
+SELL:
+  ID 6 | Qty: 10 @ 100
+Server Response:
+{"status":"ADDED_TO_BOOK"}
+
+New Order - ID: 7, Side: BUY, Type: MARKET, Qty: 3, Price: $98
+TRADE: BuyID 7, SellID 6, Qty: 3, Price: $100
+--------------------------------------------------------
+{"status":"FILLED","trades":[{"buy_order_id":7,"price":100.0,"quantity":3,"sell_order_id":6}]}
+
+ORDER BOOK
+BUY:
+SELL:
+  ID 6 | Qty: 7 @ 100
+Server Response:
+{"status":"FILLED","trades":[{"buy_order_id":7,"price":100.0,"quantity":3,"sell_order_id":6}]}
+
+New Order - ID: 8, Side: BUY, Type: MARKET, Qty: 3, Price: $98
+TRADE: BuyID 8, SellID 6, Qty: 3, Price: $100
+--------------------------------------------------------
+{"status":"FILLED","trades":[{"buy_order_id":8,"price":100.0,"quantity":3,"sell_order_id":6}]}
+
+ORDER BOOK
+BUY:
+SELL:
+  ID 6 | Qty: 4 @ 100
+Server Response:
+{"status":"FILLED","trades":[{"buy_order_id":8,"price":100.0,"quantity":3,"sell_order_id":6}]}
+[       OK ] MultiTCPConnectionTest.TCPMultiClientOrders (201 ms)
+[----------] 4 tests from MultiTCPConnectionTest (403 ms total)
+
 [----------] Global test environment tear-down
-[==========] 13 tests from 5 test suites ran. (101 ms total)
-[  PASSED  ] 13 tests.
+[==========] 17 tests from 6 test suites ran. (505 ms total)
+[  PASSED  ] 17 tests.
 <end of output>
-Test time =   0.11 sec
+Test time =   0.51 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderBookTests" end time: Jun 27 06:23 CDT
+"OrderBookTests" end time: Jun 28 09:53 CDT
 "OrderBookTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 27 06:23 CDT
+End testing: Jun 28 09:53 CDT

@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/koki/projects/matching-engine/src/ClientUtils.cpp" "CMakeFiles/tests.dir/src/ClientUtils.cpp.o" "gcc" "CMakeFiles/tests.dir/src/ClientUtils.cpp.o.d"
   "/home/koki/projects/matching-engine/src/MatchingEngine.cpp" "CMakeFiles/tests.dir/src/MatchingEngine.cpp.o" "gcc" "CMakeFiles/tests.dir/src/MatchingEngine.cpp.o.d"
   "/home/koki/projects/matching-engine/src/OrderBook.cpp" "CMakeFiles/tests.dir/src/OrderBook.cpp.o" "gcc" "CMakeFiles/tests.dir/src/OrderBook.cpp.o.d"
   "/home/koki/projects/matching-engine/src/SocketWrapper.cpp" "CMakeFiles/tests.dir/src/SocketWrapper.cpp.o" "gcc" "CMakeFiles/tests.dir/src/SocketWrapper.cpp.o.d"
   "/home/koki/projects/matching-engine/src/TradeLogger.cpp" "CMakeFiles/tests.dir/src/TradeLogger.cpp.o" "gcc" "CMakeFiles/tests.dir/src/TradeLogger.cpp.o.d"
   "/home/koki/projects/matching-engine/tests/MatchingEngineTest.cpp" "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.o.d"
+  "/home/koki/projects/matching-engine/tests/MultiTCPConnectionTest.cpp" "CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.o.d"
   "/home/koki/projects/matching-engine/tests/OrderBookTest.cpp" "CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/OrderBookTest.cpp.o.d"
   "/home/koki/projects/matching-engine/tests/SingleTCPConnectionTest.cpp" "CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/SingleTCPConnectionTest.cpp.o.d"
   )

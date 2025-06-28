@@ -30,10 +30,10 @@ void sendOrder(SocketWrapper& client,
 
     char buffer[4096];
     ssize_t n = client.receive(buffer, sizeof(buffer));
-    /*
+    
     if (n > 0) {
         std::string response(buffer, n);
         std::cout << "Server Response:\n" << response << std::endl;
     }
-    */
+    
 }

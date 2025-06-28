@@ -295,6 +295,7 @@ src/ClientUtils.o: src/ClientUtils.cpp.o
 src/ClientUtils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/ClientUtils.cpp.o
 .PHONY : src/ClientUtils.cpp.o
 
 src/ClientUtils.i: src/ClientUtils.cpp.i
@@ -304,6 +305,7 @@ src/ClientUtils.i: src/ClientUtils.cpp.i
 src/ClientUtils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/ClientUtils.cpp.i
 .PHONY : src/ClientUtils.cpp.i
 
 src/ClientUtils.s: src/ClientUtils.cpp.s
@@ -313,6 +315,7 @@ src/ClientUtils.s: src/ClientUtils.cpp.s
 src/ClientUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/ClientUtils.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmarking.dir/build.make CMakeFiles/benchmarking.dir/src/ClientUtils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/ClientUtils.cpp.s
 .PHONY : src/ClientUtils.cpp.s
 
 src/MatchingEngine.o: src/MatchingEngine.cpp.o
@@ -576,6 +579,30 @@ tests/MatchingEngineTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MatchingEngineTest.cpp.s
 .PHONY : tests/MatchingEngineTest.cpp.s
 
+tests/MultiTCPConnectionTest.o: tests/MultiTCPConnectionTest.cpp.o
+.PHONY : tests/MultiTCPConnectionTest.o
+
+# target to build an object file
+tests/MultiTCPConnectionTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.o
+.PHONY : tests/MultiTCPConnectionTest.cpp.o
+
+tests/MultiTCPConnectionTest.i: tests/MultiTCPConnectionTest.cpp.i
+.PHONY : tests/MultiTCPConnectionTest.i
+
+# target to preprocess a source file
+tests/MultiTCPConnectionTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.i
+.PHONY : tests/MultiTCPConnectionTest.cpp.i
+
+tests/MultiTCPConnectionTest.s: tests/MultiTCPConnectionTest.cpp.s
+.PHONY : tests/MultiTCPConnectionTest.s
+
+# target to generate assembly for a file
+tests/MultiTCPConnectionTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MultiTCPConnectionTest.cpp.s
+.PHONY : tests/MultiTCPConnectionTest.cpp.s
+
 tests/OrderBookTest.o: tests/OrderBookTest.cpp.o
 .PHONY : tests/OrderBookTest.o
 
@@ -676,6 +703,9 @@ help:
 	@echo "... tests/MatchingEngineTest.o"
 	@echo "... tests/MatchingEngineTest.i"
 	@echo "... tests/MatchingEngineTest.s"
+	@echo "... tests/MultiTCPConnectionTest.o"
+	@echo "... tests/MultiTCPConnectionTest.i"
+	@echo "... tests/MultiTCPConnectionTest.s"
 	@echo "... tests/OrderBookTest.o"
 	@echo "... tests/OrderBookTest.i"
 	@echo "... tests/OrderBookTest.s"
