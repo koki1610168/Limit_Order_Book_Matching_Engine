@@ -1,6 +1,6 @@
 # C++ Limit & Market Order Book Matching Engine
 
-A TCP-based C++ limit & market order matching engine supporting partial fills, multi-client concurrency with epoll, and latency benchmarking.
+#### supporting partial fills, multi-client concurrency with epoll, and latency benchmarking.
 ---
 
 ## Features
