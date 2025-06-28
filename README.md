@@ -9,27 +9,6 @@
 - Benchmarking between two laptops via TCP connection
 - Tested using GoogleTest
 
-## Project Structure
-<pre>
-matching-engine/
-|---include/
-        |---MatchingEngine.hpp
-        |---Order.hpp
-        |---OrderBook.hpp
-|---src/
-        |---main.cpp
-        |---MatchingEngine.cpp
-        |---OrderBook.cpp
-|---tests/
-        |---MatchingEngineTest.cpp
-        |---OrderBookTest.cpp
-|---CMakeLists.txt
-|---README.md
-|---LICENSE.md
-</pre>
-
----
-
 ## Getting Started
 
 ### Prerequisites
