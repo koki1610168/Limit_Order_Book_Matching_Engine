@@ -4,7 +4,7 @@
 - Handles limit & market buy and sell orders
 - Implements price-time priority
 - Tracks partially filled and unmatched orders in an order book
-- Supports client submission of JSON-formatted orders over a TCP connection
+- Supports multi client submission of JSON-formatted orders over a TCP connection using epoll
 - Asynchronous trade logging via a background thread
 - Benchmarking between two laptops via TCP connection
 - Tested using GoogleTest
