@@ -1,7 +1,6 @@
 # C++ Limit & Market Order Book Matching Engine
 
-A simple limit order book matching engine written in C++20
-
+A TCP-based C++ limit & market order matching engine supporting partial fills, multi-client concurrency with epoll, and latency benchmarking.
 ---
 
 ## Features
@@ -10,7 +9,7 @@ A simple limit order book matching engine written in C++20
 - Tracks partially filled and unmatched orders in an order book
 - Supports client submission of JSON-formatted orders over a TCP connection
 - Asynchronous trade logging via a background thread
-- Benchmarking with 1,000,000 orders
+- Benchmarking between two laptops via TCP connection
 - Tested using GoogleTest
 
 ## Project Structure
@@ -109,14 +108,11 @@ SELL:
 ```
 
 ### Benchmark
-**Input**
+This throughput can be improved by using binary protocol instead of using JSON.\
+**Output**
 ```
-./benchmarking
-```
-**Output
-```
-Submitted 1000000 orders in 1.62821 seconds
-Throughput: 614171 orders/sec
+Submitted 10 orders in 0.127608 seconds
+Throughput: 78.3651 orders/sec
 ```
 
 ### Logging File Example
