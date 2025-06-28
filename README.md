@@ -1,8 +1,5 @@
 # C++ Limit & Market Order Book Matching Engine
 
-#### supporting partial fills, multi-client concurrency with epoll, and latency benchmarking.
----
-
 ## Features
 - Handles limit & market buy and sell orders
 - Implements price-time priority
